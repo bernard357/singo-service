@@ -1,0 +1,12 @@
+bandit
+coverage
+faker
+flake8
+mccabe
+mock
+pytest
+pytest-bdd
+pytest-cov
+pytest-dependency
+setuptools>=38.6.0
+-e .

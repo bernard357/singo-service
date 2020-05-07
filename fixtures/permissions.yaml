@@ -1,0 +1,206 @@
+# authorized personas are defined in users.py
+
+access-content:
+  - topic: universe
+    personas:
+      - anonymous
+      - registered
+      - member
+      - leader
+      - robot
+      - support
+      - audit
+  - topic: community
+    personas:
+      - member
+      - leader
+      - support
+      - audit
+  - topic: board
+    personas:
+      - leader
+      - support
+      - audit
+  - topic: item
+    personas:
+      - anonymous
+      - registered
+      - member
+      - leader
+      - robot
+      - support
+      - audit
+
+manage-content:
+  - topic: universe
+    personas:
+      - leader
+      - support
+  - topic: community
+    personas:
+      - leader
+      - support
+  - topic: board
+    personas:
+      - leader
+      - support
+  - topic: item
+    personas:
+      - leader
+      - support
+
+access-identities:
+  - topic: list
+    personas:
+      - member
+      - leader
+      - support
+      - audit
+  - topic: registered
+    personas:
+      - leader
+      - support
+      - audit
+  - topic: member
+    personas:
+      - member
+      - leader
+      - support
+      - audit
+  - topic: leader
+    personas:
+      - member
+      - leader
+      - support
+      - audit
+  - topic: support
+    personas:
+      - leader
+      - support
+      - audit
+  - topic: robot
+    personas:
+      - support
+      - audit
+  - topic: audit
+    personas:
+      - member
+      - leader
+      - support
+      - audit
+
+
+manage-identities:
+
+  # create identity
+  - topic: member
+    persona: support
+  - topic: leader
+    persona: support
+  - topic: robot
+    persona: support
+  - topic: audit
+    persona: support
+
+  # update identity
+  - topic: update-any-to-registered
+    personas:
+      - leader
+      - support
+
+  - topic: update-any-to-member
+    personas:
+      - leader
+      - support
+
+  - topic: update-any-to-leader
+    personas:
+      - leader
+      - support
+
+  - topic: update-any-to-audit
+    personas:
+      - leader
+      - support
+
+  - topic: update-registered-except-role
+    personas:
+      - leader
+      - support
+
+  - topic: update-member-except-role
+    personas:
+      - leader
+      - support
+
+  - topic: update-leader-except-role
+    personas:
+      - leader
+      - support
+
+  - topic: update-support-except-role
+    personas:
+      - support
+
+  - topic: update-robot-except-role
+    personas:
+      - support
+
+  - topic: update-audit-except-role
+    personas:
+      - leader
+      - support
+
+  - topic: update-self
+    personas:
+      - member
+      - leader
+      - support
+
+  # delete identity
+  - topic: delete-self
+    personas:
+      - member
+      - leader
+      - support
+
+  - topic: delete-registered
+    personas:
+      - leader
+      - support
+
+  - topic: delete-member
+    personas:
+      - leader
+      - support
+
+  - topic: delete-leader
+    personas:
+      - leader
+      - support
+
+  - topic: delete-support
+    personas:
+      - support
+
+  - topic: delete-robot
+    personas:
+      - support
+
+  - topic: delete-audit
+    personas:
+      - leader
+      - support
+
+manage-system:
+  - topic: snapshot
+    personas:
+      - leader
+      - support
+      - robot
+      - audit
+
+  - topic: restore
+    personas:
+      - support
+      - robot

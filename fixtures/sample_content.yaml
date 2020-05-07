@@ -1,0 +1,105 @@
+channels:
+
+  universe:
+
+    - id: 12345678901234567890-u01
+      content: (pas encore de contenu)
+      change: content
+      date: "2020-11-02"
+      editor: Bernard
+      introduction: cette page a été planifiée mais reste en mode brouillon
+      planned: true
+      published: false
+      title: Futur concert en 2020
+
+    - id: 12345678901234567890-u02
+      content: (pas encore de contenu)
+      change: content
+      date: "2019-11-02"
+      editor: Bernard
+      introduction: Une page pour le concert Brahms
+      planned: true
+      published: true
+      title: Concert Brahms
+
+    - id: 12345678901234567890-u03
+      content: (pas encore de contenu)
+      change: content
+      date: "2019-11-12"
+      editor: Bernard
+      introduction: Une page pour le concert Mozart
+      planned: true
+      published: true
+      title: Concert Mozart
+
+    - id: 12345678901234567890-u04
+      content: (pas encore de contenu)
+      change: content
+      date: "2019-11-22"
+      editor: Bernard
+      introduction: Une page pour le concert Beethoven
+      planned: true
+      published: true
+      title: Concert Beethoven
+
+
+  community:
+
+    - id: 12345678901234567890-c01
+      content: (pas encore de contenu)
+      change: content
+      date: "2019-11-02"
+      editor: Bernard
+      introduction: cette page a été planifiée mais reste en mode brouillon
+      planned: false
+      published: false
+      title: Liste des membres de l'association
+
+
+  board:
+
+    - id: 12345678901234567890-b01
+      content: <p>Quel est le sens de la vie ? 42</p>
+      change: new
+      date: "2019-11-02"
+      editor: Bernard
+      introduction: bonjour le monde !
+      planned: false
+      published: false
+      title: Première page de test
+
+    - id: 12345678901234567890-b02
+      content: |
+        <p>Quatre juifs ont changé la face du monde :</p>
+        <ul><li><p>Moïse est arrivé et il a dit: "Tout est Loi"</p></li>
+        <li><p>Jésus est arrivé et il a dit: "Tout est Amour"</p></li>
+        <li><p>Marx est arrivé et il a dit: "Tout est Argent"</p></li>
+        <li><p>Freud est arrivé et il a dit: "Tout est Sexe"</p></li>
+        <li><p>Einstein est arrivé et il a dit: "Tout est relatif"</p></li></ul>
+      change: published
+      date: "2019-11-02"
+      editor: Bernard
+      introduction: cette page a été publiée et n'est donc plus traitée en mode brouillon
+      planned: false
+      published: true
+      title: Deuxième page de test
+
+    - id: 12345678901234567890-b03
+      content: <p>What'up Doc?</p>
+      change: planned
+      date: "2019-11-02"
+      editor: Bernard
+      introduction: cette page a été planifiée et devrait apparaitre sur le calendrier
+      planned: true
+      published: true
+      title: Troisième page de test
+
+    - id: 12345678901234567890-b04
+      content: <p>What'up Doc?</p>
+      change: planned
+      date: "2019-11-02"
+      editor: Bernard
+      introduction: cette page a été planifiée mais reste en mode brouillon
+      planned: true
+      published: false
+      title: Quatrième page de test
