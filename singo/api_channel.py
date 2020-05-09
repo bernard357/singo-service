@@ -1,9 +1,7 @@
-import base64
 from flask import jsonify, request, abort, url_for
 from functools import wraps
 import logging
 from sys import getsizeof
-import time
 
 from permissions import Permissions
 from records import Records

@@ -1,4 +1,3 @@
-import bcrypt
 import hashlib
 import jwt
 import logging
