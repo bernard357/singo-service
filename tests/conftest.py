@@ -1,6 +1,10 @@
 import pytest
 
 
+from customization import c11n
+c11n.state_file = 'fixtures/test_state.yaml'
+
+
 def pytest_addoption(parser):
     parser.addoption(
         "--run-slow", action="store_true", default=False, help="run slow tests"

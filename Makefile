@@ -80,7 +80,7 @@ bandit:
 	python -m bandit -r ${CODE_PATH}
 
 serve:
-	python singo
+	STATE_FILE=fixtures/test_state.yaml python singo
 
 test-curl:
 	# create a user record

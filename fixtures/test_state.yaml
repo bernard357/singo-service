@@ -135,3 +135,59 @@ channels:
         <p>Fusce tincidunt laoreet mauris vitae placerat. Integer elementum orci nec sem malesuada, ut fermentum dui imperdiet. Aenean pharetra nec diam vel feugiat. Pellentesque non nunc non erat sollicitudin accumsan eu non dolor. Mauris at nisi arcu. Aliquam commodo, est vel mollis tempor, sapien arcu laoreet sapien, mattis rhoncus odio risus nec odio. Sed bibendum odio et neque tempor vulputate. Duis vel molestie eros. Duis sem tellus, bibendum eu magna et, dapibus faucibus leo.</p>
 
         <p>Ut sed arcu condimentum, ornare odio at, sollicitudin turpis. Aliquam nibh felis, aliquam eget efficitur non, ornare eu metus. Morbi gravida diam purus, ac interdum arcu ornare non. Donec sit amet nulla libero. Sed porttitor dapibus nunc, nec molestie orci faucibus et. Mauris ipsum nisi, posuere eget pulvinar ac, molestie sit amet ipsum. Nullam accumsan commodo libero, sit amet tincidunt metus ultrices ut. Aenean tincidunt id est et lacinia. Phasellus viverra pretium tempus. Aenean in risus et dolor euismod aliquet sed vel mauris.</p>
+
+users:
+
+- id: roger@yahoo.com
+  persona: registered
+  first_name: Roger
+  last_name: Rabbit
+  label: Roger Rabbit
+  phone_number: +1 234 567 890
+  e_mail: roger@yahoo.com
+  keywords: baryton
+  password: 5b49d1280e8517e54daeeb90034334ae  # P455w@rd
+
+- id: marc@acme.com
+  persona: member
+  first_name: Marc
+  last_name: Bourdon
+  label: Marc Bourdon
+  phone_number: +33 6 12 34 56 78
+  e_mail: marc@acme.com
+  keywords: basse
+  password: 5b49d1280e8517e54daeeb90034334ae  # P455w@rd
+
+- id: lea@acme.com
+  persona: leader
+  first_name: Lea
+  last_name: Pinson
+  label: Lea Pinson
+  phone_number: +33 6 12 34 56 78
+  e_mail: lea@acme.com
+  keywords: soprano
+  password: 5b49d1280e8517e54daeeb90034334ae  # P455w@rd
+
+- id: robot
+  persona: robot
+  first_name: Robot
+  last_name: D2R2
+  label: Robot of Star Wars
+  password: 5b49d1280e8517e54daeeb90034334ae  # P455w@rd
+
+- id: sylvia@acme.com
+  persona: support
+  first_name: Sylvia
+  last_name: Deypanne
+  phone_number: +33 6 12 34 56 78
+  e_mail: sylvia@acme.com
+  password: 5b49d1280e8517e54daeeb90034334ae  # P455w@rd
+
+- id: alfred@acme.com
+  persona: audit
+  first_name: Alfred
+  last_name: Verrif
+  label: Alfred Verrif
+  phone: +33 6 12 34 56 78
+  e_mail: alfred@acme.com
+  password: 5b49d1280e8517e54daeeb90034334ae  # P455w@rd
