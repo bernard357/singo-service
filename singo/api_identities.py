@@ -1,5 +1,5 @@
 import copy
-from flask import jsonify, request, abort, url_for, make_response
+from Flask import jsonify, request, abort, url_for, make_response
 from functools import wraps
 import jwt
 import logging

@@ -1,4 +1,4 @@
-from flask import Flask
+from Flask import Flask
 from flask_cors import CORS
 import logging
 
