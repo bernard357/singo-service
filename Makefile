@@ -116,4 +116,3 @@ remove-from-git:
 	git filter-branch --force --index-filter \
   	"git rm --cached --ignore-unmatch ${PATH_TO_REMOVE}" \
   	--prune-empty --tag-name-filter cat -- --all
-	echo "${PATH_TO_REMOVE}" >> .gitignore
