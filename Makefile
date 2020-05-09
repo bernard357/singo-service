@@ -109,3 +109,11 @@ test-curl:
 			 -b .bearer  \
 	     http://localhost:5000/users) && test "$${code}" = "200"
 	echo "done"
+
+remove-from-git:
+	@[ ! -z "${PATH_TO_REMOVE}" ] || (echo "You should set PATH_TO_REMOVE. For example: PATH_TO_REMOVE=yarn.lock make remove-from-git"; exit 1)
+	@read -p "Are you sure that you want to destroy file '${PATH_TO_REMOVE}'? [y/N]: " sure && [ $${sure:-N} == y ]
+	git filter-branch --force --index-filter \
+  	"git rm --cached --ignore-unmatch ${PATH_TO_REMOVE}" \
+  	--prune-empty --tag-name-filter cat -- --all
+	echo "${PATH_TO_REMOVE}" >> .gitignore
