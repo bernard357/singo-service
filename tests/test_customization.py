@@ -9,8 +9,11 @@ pytestmark = mark.wip
 
 
 def test_default_state_file():
-    os.environ['STATE_FILE'] = ''
+    os.environ.pop('STATE_FILE', None)
     assert Customization().state_file == 'fixtures/state.yaml'
+
+    os.environ['STATE_FILE'] = ''
+    assert Customization().state_file == ''
 
 
 def test_state_file_set_by_environ():

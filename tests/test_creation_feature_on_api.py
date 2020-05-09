@@ -15,7 +15,7 @@ pytestmark = mark.api
 @fixture
 def _context():
     print("getting a new context")
-    with open('fixtures/sample_snapshot.yaml', 'r') as stream:
+    with open('fixtures/test_state.yaml', 'r') as stream:
         maintenance.import_content(stream)
     identities.store = Users()
 
