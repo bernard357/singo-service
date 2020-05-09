@@ -33,11 +33,11 @@ checklist:
 install:
 	@echo "Installing software..."
 	python3 -m venv .env
-	source .env/bin/activate && pip install -r requirements.txt
+	. .env/bin/activate && pip install -r requirements.txt
 
 shell:
 	@echo "Hit <Ctl-D> to exit this shell"
-	source .env/bin/activate && bash
+	. .env/bin/activate && bash
 
 lint:
 	python -m flake8 --max-complexity 6 --ignore E402,E501,F841,W503 ${CODE_PATH}
