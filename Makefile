@@ -110,6 +110,9 @@ test-curl:
 	     http://localhost:5000/users) && test "$${code}" = "200"
 	echo "done"
 
+tracked-in-git:
+	git log --pretty=format: --name-only | sort - -u
+
 remove-from-git:
 	@[ ! -z "${PATH_TO_REMOVE}" ] || (echo "You should set PATH_TO_REMOVE. For example: PATH_TO_REMOVE=yarn.lock make remove-from-git"; exit 1)
 	@read -p "Are you sure that you want to destroy file '${PATH_TO_REMOVE}'? [y/N]: " sure && [ $${sure:-N} == y ]
