@@ -1,4 +1,4 @@
-from Flask import jsonify, request, abort, url_for
+from flask import jsonify, request, abort, url_for
 from functools import wraps
 import logging
 from sys import getsizeof
