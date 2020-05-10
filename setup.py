@@ -19,9 +19,7 @@ setuptools.setup(
     packages=setuptools.find_packages(where="singo"),
 
     install_requires=[
-        "boto3",
         "Flask",
-        "flask-classful",
         "flask-cors",
         "pyjwt",
         "pyyaml",
