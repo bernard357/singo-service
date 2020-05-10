@@ -1,5 +1,4 @@
 help:
-	@echo "checklist - check environment variables and configuration"
 	@echo "install - install code and dependencies for developers and pipelines"
 	@echo "shell - enter your specific development environment"
 	@echo "lint - analyze python code"
@@ -7,28 +6,8 @@ help:
 	@echo "coverage - track untested code in web browser"
 	@echo "bandit - look for secret strings in the code"
 
-# by default, target test environment
-ENVIRONMENT ?= test
-#ENVIRONMENT ?= production
-
-AWS_DEFAULT_REGION ?= eu-west-3
-
-AWS_PROFILE ?= aws-bernard357
-
-AWS_SSH_KEY ?= aws-paris-kp
-
 # python code to be analyzed
 CODE_PATH := singo
-
-checklist:
-	@echo "Checking configuration..."
-	@if [ -z "${AWS_PROFILE}" ] ;\
-	then \
-		echo "ERROR: Variable AWS_PROFILE has not been set. You can do:" ;\
-		echo "export AWS_PROFILE=myProfile" ;\
-		exit 1 ;\
-	fi
-	@echo "Configuration OK"
 
 install:
 	@echo "Installing software..."
