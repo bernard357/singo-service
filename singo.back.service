@@ -1,0 +1,14 @@
+[Unit]
+Description=Singo Service demo server
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=centos
+ExecStart=/bin/bash /root/singo-service/singo-service.sh
+
+[Install]
+WantedBy=multi-user.target
