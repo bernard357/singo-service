@@ -1,2 +1,2 @@
 cd /root/singo-service
-make serve
+. .env/bin/activate && make serve
