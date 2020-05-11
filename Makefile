@@ -89,6 +89,12 @@ test-curl:
 	     http://localhost:5000/users) && test "$${code}" = "200"
 	echo "done"
 
+image:
+	docker build -t singo-server:v1 .
+
+container:
+	docker run -d -p 5000:5000 --rm --name singo-server singo-server:v1
+
 tracked-in-git:
 	git log --pretty=format: --name-only | sort - -u
 
